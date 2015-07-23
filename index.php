@@ -35,7 +35,7 @@ function jems_genesis_columns( $atts, $content = '' ) {
 		$classes .= ' first';
 	
 	if ( $atts['classes'] != null )
-		$classes .= $atts['classes'];
+		$classes .= ' '. $atts['classes'];
 	
 	return '<div class="'. $classes .'">'. gc_strip_autop( $content ) .'</div>';
 }
